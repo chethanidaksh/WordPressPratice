@@ -1,0 +1,19 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "WordPress",
+    "dockerFile": "Dockerfile",
+    "appPort": [
+        80
+    ],
+    "postCreateCommand": "bash setup-wordpress.sh",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-azuretools.vscode-docker",
+        "streetsidesoftware.code-spell-checker"
+    ],
+    "forwardPorts": [
+        80
+    ]
+}
